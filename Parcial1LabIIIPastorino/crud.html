@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="./js/crud.js" type="module"></script>
+    <title>CRUD - Pastorino</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="./img/istockphoto-1027966368-612x612.jpg" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">Personajes</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
+              </ul>
+        </nav>
+    </header>
+    <h1>Crud Heroes</h1>
+    <main>
+        <section class="seccion-formulario">
+            <form>
+                <h2>Información del SuperHeroe</h2>
+                <label for="txtNombre">Nombre:</label>
+                <input type="text" name="txtNombre" placeholder="Ingrese Nombre" required>
+                <label for="txtAlias">Alias:</label>
+                <input type="text" name="txtAlias" placeholder="Ingrese alter-ego" required>
+                <fieldset>
+                    <legend>Editorial:</legend>
+                    <input type="radio" name="rdoEditorial" value="Marvel" checked>Marvel
+                    <br>
+                    <input type="radio" name="rdoEditorial" value="DC">DC
+                    <br>
+                </fieldset>
+                <label for="rangeFuerza">Fuerza:</label>
+                <input type="range" name="rangeFuerza">
+                <label for="selectArma">Arma:</label>
+                <select name="selectArma" id="selectArmas">
+                </select>
+                <input type="hidden" name="txtId">
+                <input type="submit" value="Guardar">
+                <input type="button" class="ocultar" value="Eliminar" id="eliminar"></button>
+                <input type="button" class="ocultar" value="Cancelar" id="cancelar"></button>
+                
+            </form>
+        </section>
+    </section>
+    <section class="seccion-tabla">
+        <img src="./img/lPT6sw3Sg8eT.gif" alt="" id="spinner" width="50px">
+        <div id="tabla"></div>
+    </section>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">Personajes</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
+              </ul>
+        </nav>  
+        <p>Laboratorio III - Todos los Derechos Reservados &copy;</p>
+    </footer>
+</body>
+</html>
